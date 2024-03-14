@@ -1,0 +1,2 @@
+# abyss on paired end reads kmer 96bp on putative salmonella genome
+abyss-pe name=salmonella k=96 B=2G in='SAL_01_S228_firstone.fastq.gz SAL_01_S228_secondone.fastq.gz'
