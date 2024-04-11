@@ -1,0 +1,3 @@
+Organism Scientific Name	Organism Common Name	Organism Qualifier	Taxonomy id	Assembly Name	Assembly Accession	Source	Annotation	Level	Contig N50	Size	Submission Date	Gene Count	BioProject	BioSample
+Cellulosimicrobium cellulans		strain: ORNL-0100	1710	ASM1812826v1	GCA_018128265.1	GenBank	NCBI Prokaryotic Genome Annotation Pipeline (PGAP)	Complete Genome	4265420	4411608	2021-04-22	4010	PRJNA282954	SAMN18352201
+Cellulosimicrobium cellulans		strain: ORNL-0100	1710	ASM1812826v1	GCF_018128265.1	RefSeq	GCF_018128265.1-RS_2024_03_28	Complete Genome	4265420	4411608	2021-04-22	4021	PRJNA282954	SAMN18352201
