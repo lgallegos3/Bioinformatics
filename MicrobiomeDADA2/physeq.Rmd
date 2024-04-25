@@ -10,6 +10,7 @@ output: pdf_document
 library(phyloseq)
 library(dplyr)
 library(BiMiCo)
+library(ggplot2)
 ```
 
 # load taxa and seqtab.nochim
@@ -43,7 +44,7 @@ physeq
 
 # remove mitochondria and chloroplast matches. remove all non bacterial sequences
 ```{r}
-physeq <- physeq %>% subset_taxa( Family! = "Mitochondria" |  is.na(Family) & Order! = "Chloroplast" | is.na(Order))
+physeq <- physeq %>% subset_taxa( Family "Mitochondria" |  is.na(Family) & Order! = "Chloroplast" | is.na(Order))
 physeq
 ```
 
@@ -127,7 +128,7 @@ alpha <- merge(alpha, samples, by = "sample")
 # perform t/wilcox tests for each biodiversity index
 test_observed <- wilcox.test(Observed ~ subject, data=alpha)
 test_simpson <- wilcox.test(Simpson ~ subject, data=alpha)
-test_shannon <- t.test(shannon ~ subject, data=alpha)
+test_shannon <- t.test(Shannon ~ subject, data=alpha)
 
 # printing the results
 print(test_observed)
@@ -140,7 +141,7 @@ print(test_shannon)
 # perform t/Wilcox tests for each biodiversity index
 test_observed <- wilcox.test(Observed ~ reported.antibiotic.usage, data=alpha)
 test_simpson <- wilcox.test(Simpson ~ reported.antibiotic.usage, data=alpha)
-test_shannon <- t.test(shannon ~ reported.antibiotic.usage, data=alpha)
+test_shannon <- t.test(Shannon ~ reported.antibiotic.usage, data=alpha)
 
 # printing the results
 print(test_observed)
@@ -154,7 +155,78 @@ kruskal.test(Simpson ~ body.site, data=alpha)
 pairwise.wilcox.test(alpha$Simpson, alpha$body.site, p.adjust.method = "holm")
 kruskal.test(Observed ~ body.site, data=alpha)
 pairwise.wilcox.test(alpha$Observed, alpha$body.site, p.adjust.method = "holm")
-shannonanova <- aov(Shannon ~ body.site, data=aplha)
+shannonanova <- aov(Shannon ~ body.site, data=alpha)
 summary(shannonanova)
-TurkeyHSD(shannonanova)
+TukeyHSD(shannonanova)
+```
+
+# Remove taxa with relative abundance <).0``05%
+```{r}
+minToRelAbun=.00005
+x=taxa_sums(physeq)
+keepTaxa=(x/sum(x))>minToRelAbun
+physeqprune=prune_taxa(keepTaxa, physeq)
+physeqprune
+```
+
+# Number of shared ASVs body.site (found in 25% or more)
+```{r}
+bodysite=ps_venn(
+ physeqprune, 
+ "body.site",
+ fraction=.25,
+ weight=FALSE,
+ relative=TRUE,
+ plot=TRUE
+)
+bodysite
+```
+
+#Bray Curtis Calculation
+```{r message=FALSE}
+set.seed(111)
+dist=phyloseq::distance(physeqprune, method="bray", weighted=TRUE)
+ordination=ordinate(physeqprune, method="NMDS", distance=dist)
+```
+
+
+# Bray Curtis Subject Plot
+```{r}
+braysubject=plot_ordination(physeqprune, ordination, color="subject") +
+  theme_classic() +
+  theme(strip.background = element_blank()) + stat_ellipse(aes(group=subject))
+braysubject
+```
+
+# Bray Curtis body.site Plot
+```{r}
+braysubject=plot_ordination(physeqprune, ordination, color="body.site") +
+  theme_classic() +
+  theme(strip.background = element_blank()) + stat_ellipse(aes(group=subject))
+braysubject
+```
+
+# Bray Curtis Antibiotics Usage Plot
+```{r}
+braysubject=plot_ordination(physeqprune, ordination, color="reported.antibiotic.usage") +
+  theme_classic() +
+  theme(strip.background = element_blank()) + stat_ellipse(aes(group=subject))
+braysubject
+```
+
+# Bray Curtis Subject Statistics
+```{r}
+adonis2(dist ~ sample_data(physeqprune)$subject)
+```
+
+# Bray Curtis Body Site statistics
+```{r}
+adonis2(dist ~ sample_data(physeqprune)$body.site)
+ps.disper<-betadisper(dist, sample_data(physeqprune)$body.site)
+permutest(ps.disper, pair=TRUE)
+```
+
+# Bray Curtis Antibiotic Usage Statistics
+```{r}
+adonis2(dist ~ sample_data(physeqprune)$reported.antibiotic.usage)
 ```
