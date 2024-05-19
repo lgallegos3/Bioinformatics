@@ -1,0 +1,47 @@
+Bioinformatics final-Alignment
+
+****The Gene is rsmH from STREPTOCOCCUS PNEUMONIAE***
+rsmH 16S rRNA (cytosine(1402)-N(4))-methyltransferase RsmH [ Streptococcus pneumoniae ] 
+#This is the original one entered into tblastn#
+
+~Result 1:
+ 1 mtkefhhvtv llhetidmld vkpdgiyvda tlggaghsey llsklsekgh lyafdqdqna
+       61 idnaqkrlap yiekgmvtfi kdnfrhlqar lreagvqeid gicydlgvss pqldqrergf
+      121 sykkdapldm rmnqdaslta yevvnnydyh dlvriffkyg edkfskqiar kieqarevkp
+      181 ietttelaei iklvkpakel kkkghpakqi fqairievnd elgaadesiq qamdmlaldg
+      241 risvitfhsl edrltkqlfk eastvevpkg lpfipddlkp kmelvsrkpi lpsaeelean
+      301 nrshsaklrv arkihk
+//
+
+~Result 2: 
+Vulpes lagopus ribosomal RNA small subunit methyltransferase H (LOC121489482), mRNA
+
+>MESMTKDFHHITVLLHETVDMLDVKPDGIYVDATLGGAGHSEYL
+                     LSKLGPKGHLYAFDQDQTAIDNAHIRLKPYIDKGQVTFIKDNFRHLKSQLAAHGVSEI
+                     DGILYDLGVSSPQLDERQRGFSYKKDAPLDMRMNRDQDLSAYDVVNTYDYHDLVRIFF
+                     KYGEDKFSKQIARKIEQARQVKPIETTTELAEIIKSAKPAKALKKKGHPAKQIFQAIR
+                     IEVNDELGAADESIQQAIDLLAVDGRISVITFHSLEDRLTKQLFKEASTVEVPKGLPF
+                     IPEDMQPTLALVNRKPILPSEEELQANNRSHSAKLRVARKVHKNHDGQ
+
+~Result 3: 
+Globicephala melas ribosomal RNA small subunit methyltransferase H-like (LOC132595355), mRNA
+
+>MTFYHTPVLLQECLEAMQVKADGTYIDVTFGGGGHSKAILEKLG
+                     KEGHLYSVDQDPDARRNIPEGAESFTFIASNFRHIDRFMDYYAKLGKVDAVLADLGVS
+                     SHHFDEPERGFSFRSETPLLDMRMNTSSKLSAQTVINEYEEEDLANIIYKYGELRQSR
+                     QIARRIVQARNEKPIKTIGDLLEVVRPCLRPKDEKKQMSMLFQAIRIEVNDELGALEE
+                     MLKACLSVLKKGGRLVVITYHSLEDRIVKNFLKSASKSNDLEQQIYGGGRTQWKLITR
+                     KPITPSAQELEENPRSRSAKLRVAELN
+
+~Result 4: 
+
+Abrus precatorius ribosomal RNA small subunit methyltransferase H (LOC113847474), mRNA
+
+>MLSKISSSLFSPKLKLKLKLKPKPFYSFILSRSAATLTVRNSKE
+                     KAKAALAKEKRRTRSTKEFNKDAIIEQCLIGESHTHHIPVMLAEVLDVFSNTRLTSFV
+                     DCTLGAAGHSAALLRAHPELTHFVGLDVDPLAHHMAQSRLHAASDSSVNVFTVLRNFR
+                     HIKGVLRETGSQQLLGVDGILMDLGMSSMQVDNPQRGFSVLADGPLDMRMDPQASLKA
+                     EDILNSWPDSEVGRILWEYGEESNWRTLQKKIVEARLRGGLHSTTDLLDLIQRVTPAI
+                     KGGRQGWIKTATRVFQALRIAVNDELKTLEDSLYSCFDCLAPGGRLAVISFHSLEDRI
+                     VKQTFLDIIKGSEDVEEGESINHDLRKTIEEVKAKEAWIRQVICGSNGTILTKRPITP
+                     SGEEEKLNRRSRSAKLRVIQKH

@@ -1,0 +1,48 @@
+>clustal
+Abrus              MLSKISSSLFSPKLKLKLKLKPKPFYSFILSRSAATLTVRNSKEKAKAALAKEKRRTRST	60
+Streptococcus      ------------------------------------------------------------	0
+Vulpes             ------------------------------------------------------------	0
+Globicephala       ------------------------------------------------------------	0
+                                                                               
+
+Abrus              KEFNKDAIIEQCLIGESHTHHIPVMLAEVLDVFSNTRLTSFVDCTLGAAGHSAALLRAHP	120
+Streptococcus      --------------mtkefhhvtvllhetidmldvkpdgiyvdatlggaghseyllskls	46
+Vulpes             -----------MESMTKDFHHITVLLHETVDMLDVKPDGIYVDATLGGAGHSEYLLSKLG	49
+Globicephala       ----------------MTFYHTPVLLQECLEAMQVKADGTYIDVTFGGGGHSKAILEKLG	44
+                                      :*  *:* * :: :. .    ::* *:*..***  :*    
+
+Abrus              ELTHFVGLDVDPLAHHMAQSRLHAASDSSVNVFTVLRNFRHIKGVLRETGSQQLLGVDGI	180
+Streptococcus      ekghlyafdqdqnaidnaqkrlapyiekgmv-tfikdnfrhlqarlre-a--gvqeidgi	102
+Vulpes             PKGHLYAFDQDQTAIDNAHIRLKPYIDKGQV-TFIKDNFRHLKSQLAA-H--GVSEIDGI	105
+Globicephala       KEGHLYSVDQDPDARRNIPEG------AESF-TFIASNFRHIDRFMDYYA--KLGKVDAV	95
+                      *: ..* *  *                    :  ****:.  :       :  :*.:
+
+Abrus              LMDLGMSSMQVDNPQRGFSVLADGP-LDMRMDPQASLKAEDILNSWPDSEVGRILWEYGE	239
+Streptococcus      cydlgvsspqldqrergfsykkdap-ldmrmnqdasltayevvnnydyhdlvriffkyge	161
+Vulpes             LYDLGVSSPQLDERQRGFSYKKDAP-LDMRMNRDQDLSAYDVVNTYDYHDLVRIFFKYGE	164
+Globicephala       LADLGVSSHHFDEPERGFSFRSETPLLDMRMNTSSKLSAQTVINEYEEEDLANIIYKYGE	155
+                     ***:** :.*: :****   : * *****: . .*.*  ::* :   :: .*:::***
+
+Abrus              ESNWRTLQKKIVEARLRGGLHSTTDLLDLIQRVTPAIKGGRQGWIKTATRVFQALRIAVN	299
+Streptococcus      dkfskqiarkieqarevkpietttelaeiiklvkpakelkkkg--hpakqifqairievn	219
+Vulpes             DKFSKQIARKIEQARQVKPIETTTELAEIIKSAKPAKALKKKG--HPAKQIFQAIRIEVN	222
+Globicephala       LRQSRQIARRIVQARNEKPIKTIGDLLEVVR---PCLRPKDEK--KQMSMLFQAIRIEVN	210
+                       : : ::* :**    :.:  :* ::::   *.     :   :  . :***:** **
+
+Abrus              DELKTLEDSLYSCFDCLAPGGRLAVISFHSLEDRIVKQTFLDIIKGSEDVEEGESINHDL	359
+Streptococcus      delgaadesiqqamdmlaldgrisvitfhsledrltkqlfkeastv-evpkglpfipddl	278
+Vulpes             DELGAADESIQQAIDLLAVDGRISVITFHSLEDRLTKQLFKEASTV-EVPKGLPFIPEDM	281
+Globicephala       DELGALEEMLKACLSVLKKGGRLVVITYHSLEDRIVKNFLKSASKS-NDLEQQ--IYGGG	267
+                   *** : :: :  .:. *  .**: **::******:.*: : .  .  :  :    *  . 
+
+Abrus              RKTIEEVKAKEAWIRQVICGSNGTILTKRPITPSGEEEKLNRRSRSAKLRVIQKH-----	414
+Streptococcus      k-------------------pkmelvsrkpilpsaeeleannrshsaklrvarkihk---	316
+Vulpes             Q-------------------PTLALVNRKPILPSEEELQANNRSHSAKLRVARKVHKNHD	322
+Globicephala       R-------------------TQWKLITRKPITPSAQELEENPRSRSAKLRVAELN-----	303
+                   :                       ::.::** ** :* : * **:****** .       
+
+Abrus              --	414
+Streptococcus      --	316
+Vulpes             GQ	324
+Globicephala       --	303
+                     
